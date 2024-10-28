@@ -30,14 +30,10 @@ class Motorbike extends Vehicle{
     this.weight = weight;
     this.topSpeed = topSpeed;
     this.wheels = wheels;
-
-    function wheelCheck(wheels: object[]): void {
+    
       if (wheels.length !== 2) {
-        const wheel1 = new Wheel();
-        const wheel2 = new Wheel();
-        wheels.push(wheel1, wheel2);
+        this.wheels = [new Wheel(), new Wheel()]
       };
-    }
   };
   // TODO: Implement the wheelie method
     // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
