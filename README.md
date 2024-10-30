@@ -4,7 +4,7 @@
 
 ## Description
 
-"This program uses inquirer to allow a user to navigate several menus and perform different actions."
+"This program uses inquirer to allow a user to navigate several menus and simulate the experience of driving any vehicle (that is one of three types clearly defined in the menus)"
 
 
 
