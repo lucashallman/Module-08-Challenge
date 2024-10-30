@@ -30,7 +30,7 @@ class Motorbike extends Vehicle{
     this.weight = weight;
     this.topSpeed = topSpeed;
     this.wheels = wheels;
-    
+
       if (wheels.length !== 2) {
         this.wheels = [new Wheel(), new Wheel()]
       };
@@ -41,7 +41,7 @@ class Motorbike extends Vehicle{
       if (this.started) {
         console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
       } else {
-        console.log(`Start the vehicle first.`);
+        console.log(`Start the Vehicle first.`);
       }
     };
   // TODO: Override the printDetails method from the Vehicle class

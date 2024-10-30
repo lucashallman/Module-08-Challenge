@@ -6,7 +6,7 @@ import Wheel from './Wheel.js';
 import AbleToTow from '../interfaces/AbleToTow.js';
 
 // TODO: The Truck class should extend the Vehicle class and should implement the AbleToTow interface
-class Truck extends Vehicle {
+class Truck extends Vehicle implements AbleToTow {
   // TODO: Declare properties of the Truck class
   // TODO: The properties should include vin, color, make, model, year, weight, top speed, wheels, and towing capacity
   // TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[]), towingCapacity (number)
@@ -41,15 +41,15 @@ class Truck extends Vehicle {
     };
   }
   // TODO: Implement the tow method from the AbleToTow interface
-  tow(vehicle: Truck | Motorbike | Car): void {
+  tow(vehicle: (Car|Truck|Motorbike)): void {
     // TODO: Get the make an model of the vehicle if it exists
-    const make = vehicle.make;
-    const model = vehicle.model;
     // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
-    if (this.towingCapacity < vehicle.weight) {
-      console.log(`The ${make} ${model} is being towed.`);
+    if (this.towingCapacity > vehicle.weight) {
+      console.log(`The ${vehicle.make} ${vehicle.model} is being towed.`);
+      return;
     } else {
-      console.log(`The ${make} ${model} is too heavy to tow.`);
+      console.log(`The ${vehicle.make} ${vehicle.model} is too heavy to tow.`);
+      return;
     }
     // TODO: If it is, log that the vehicle is being towed
     // TODO: If it is not, log that the vehicle is too heavy to be towed
