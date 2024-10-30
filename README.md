@@ -20,7 +20,7 @@
 
 ## Table of Contents
 
-
+- [Walkthrough](#walkthrough)
 
 - [Installation](#installation)
 
@@ -32,7 +32,9 @@
 
 - [Questions](#questions)
 
+## Walkthrough
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f1jqZsjy0gc?si=ds3FjzLjirfa6zhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Installation
 
